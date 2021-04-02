@@ -21,9 +21,12 @@ from sklearn.naive_bayes import GaussianNB
 
 # In[ ]:
 
+parser = ArgumentParser()
+parser.add_argument("-i", help = "Model index", type = int)
+args = parser.parse_args()
 
 models_ = {"Log Reg":LogisticRegression(max_iter = 1000),
-           "Linear SVM": SVC(kernel = "linear")
+           "Linear SVM": SVC(kernel = "linear"),
            "RBF SVM": SVC(), 
            "KNN-3": KNeighborsClassifier(n_neighbors = 3), 
            "KNN-5": KNeighborsClassifier(n_neighbors = 5),
@@ -48,39 +51,44 @@ for k in models_.keys():
 
 # In[ ]:
 
+model_name = list(models_.keys())[args.i]
+CLF = models_[model_name]
 
-kf = KFold(n_splits = 3, shuffle = True, random_state = 8675309)
+print(model_name)
+print(CLF)
+
+
+kf = KFold(n_splits = 5, shuffle = True, random_state = 8675309)
 k = 0
 for train_index, test_index in kf.split(X):
     k += 1
     print(f"k = {k}")
     X_train, X_test = X[train_index], X[test_index]
     y_train, y_test = y[train_index], y[test_index]
+
+    start_ = time()
+    CLF.fit(X_train, y_train)
+    y_pred = CLF.predict(X_test)
+    end_ = time()
+
+    print(end_ - start_)
+        
+    accuracy = accuracy_score(y_test, y_pred)
+    auprc    = average_precision_score(y_test, y_pred)
+    auroc    = roc_auc_score(y_test, y_pred)
+    f1       = f1_score(y_test, y_pred)
     
-    for model_name, CLF in models_.items():
-        print(model_name)
-        start_ = time()
-        CLF.fit(X_train, y_train)
-        y_pred = CLF.predict(X_test)
-        end_ = time()
+    results[model_name]["accuracy"] += accuracy
+    results[model_name]["auprc"]    += auprc
+    results[model_name]["auroc"]    += auroc
+    results[model_name]["f1"]       += f1
+    results[model_name]["time"]     += end_ - start_
         
-        accuracy = accuracy_score(y_test, y_pred)
-        auprc    = average_precision_score(y_test, y_pred)
-        auroc    = roc_auc_score(y_test, y_pred)
-        f1       = f1_score(y_test, y_pred)
-        
-        results[model_name]["accuracy"] += accuracy
-        results[model_name]["auprc"]    += auprc
-        results[model_name]["auroc"]    += auroc
-        results[model_name]["f1"]       += f1
-        results[model_name]["time"]     += end_ - start_
-        
-for model_name in results.keys():
-    for metric in results[model_name].keys():
-        results[model_name][metric] /= 5
+for metric in results[model_name].keys():
+    results[model_name][metric] /= 5
 
 
 # In[ ]:
 
-json.dump(results, open("../results/baselines.json", "w"))
+json.dump(results, open(f"../results/baselines_{'-'.join(model_name.split(' '))}.json", "w"))
 
