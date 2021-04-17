@@ -4,7 +4,7 @@
 #SBATCH --time=48:00:00
 #SBATCH --mem=32GB
 #SBATCH --output=../array_%A_%a.out
-#SBATCH --array=0-6
+#SBATCH --array=0-4
 
 cd ${SLURM_SUBMIT_DIR}
 
