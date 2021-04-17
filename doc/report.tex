@@ -4,6 +4,7 @@
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{lipsum}
 \usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
 
 \title{Evaluation of Nonparametric Classification Methods for Predicting Fake News from Article Titles}
 \author{Nathaniel Hawkins}
@@ -18,7 +19,7 @@
 	
 	\section{Methods}
 	
-	\lipsum[2]
+	
 	
 	\section{Data}
 
@@ -58,7 +59,24 @@
 
 	\section{Results}
 	
-    \lipsum[4]	
+    
+    
+    %% Baselines
+    \begin{table}[]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \textbf{Method} & \textbf{Accuracy} & \textbf{auPRC} & \textbf{F1} &                             \textbf{auROC} & \textbf{Time} \\ \hline
+    \textbf{Linear SVM} & 0.95 & 0.92 & 0.95 & 0.95 & 19752.63 \\ \hline
+    \textbf{Log Reg}    & 0.95 & 0.92 & 0.95 & 0.95 & 126.59   \\ \hline
+    \textbf{MLP}        & 0.94 & 0.90 & 0.93 & 0.94 & 1506.45  \\ \hline
+    \textbf{NB}         & 0.80 & 0.71 & 0.82 & 0.80 & 21.52    \\ \hline
+    \textbf{RBF SVM}    & 0.95 & 0.93 & 0.95 & 0.95 & 25225.82 \\ \hline
+    \end{tabular}
+    \caption{Baseline model results.}
+    \label{table:2}
+    \end{table} 
+    
 	
 	\section{Discussion and Conclusions}
 	
