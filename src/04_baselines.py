@@ -28,8 +28,6 @@ args = parser.parse_args()
 models_ = {"Log Reg":LogisticRegression(max_iter = 1000),
            "Linear SVM": SVC(kernel = "linear"),
            "RBF SVM": SVC(), 
-           "KNN-3": KNeighborsClassifier(n_neighbors = 3), 
-           "KNN-5": KNeighborsClassifier(n_neighbors = 5),
            "MLP": MLPClassifier(),
            "NB": GaussianNB()}
 

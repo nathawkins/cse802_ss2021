@@ -41,7 +41,9 @@ def gaussian(x_):
     x = x_.sum()
     return 1/np.sqrt(2*np.pi) * np.exp(-1/2 * x**2)
 
-models_ = {"KNN-7": KNeighborsClassifier(n_neighbors = 7),
+models_ = {"KNN-3": KNeighborsClassifier(n_neighbors = 3), 
+           "KNN-5": KNeighborsClassifier(n_neighbors = 5),
+           "KNN-7": KNeighborsClassifier(n_neighbors = 7),
            "KNN-9": KNeighborsClassifier(n_neighbors = 9),
            "KNN-11": KNeighborsClassifier(n_neighbors = 11),
            "KNN-13": KNeighborsClassifier(n_neighbors = 13),
@@ -89,8 +91,6 @@ kf = KFold(n_splits = 5, shuffle = True, random_state = 8675309)
 k = 0
 for train_index, test_index in kf.split(X):
     k += 1
-    if k > 3:
-        break
     print(f"k = {k}")
     X_train, X_test = X[train_index], X[test_index]
     y_train, y_test = y[train_index], y[test_index]
@@ -114,10 +114,10 @@ for train_index, test_index in kf.split(X):
     results[model_name]["time"]     += end_ - start_
         
 for metric in results[model_name].keys():
-    results[model_name][metric] /= 3
+    results[model_name][metric] /= 5
 
 
 # In[ ]:
 
-json.dump(results, open(f"../results/{k}_nonparametric_{'-'.join(model_name.split(' '))}.json", "w"))
+json.dump(results, open(f"../results/nonparametric_{'-'.join(model_name.split(' '))}.json", "w"))
 
