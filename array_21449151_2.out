@@ -1,0 +1,13 @@
+Error: Can't open display: localhost:39.0
+KNN-7
+KNeighborsClassifier(n_neighbors=7)
+k = 1
+11592.898705482483
+k = 2
+11220.19852924347
+k = 3
+11672.583887338638
+k = 4
+11509.426264047623
+k = 5
+11420.664433002472
