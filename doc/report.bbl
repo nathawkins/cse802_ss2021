@@ -1,35 +1,36 @@
 \begin{thebibliography}{10}
 
-\bibitem{rodriguez:2019}
-Álvaro Ibrain~Rodríguez and L.~L. Iglesias, ``Fake news detection using deep
-  learning,'' 2019.
+\bibitem{oshikawa:2020}
+R.~Oshikawa, J.~Qian, and W.~Y. Wang, ``A survey on natural language processing
+  for fake news detection,'' in {\em Proceedings of the 12th Conference on
+  Language Resources and Evaluation (LREC 2020)}, p.~6086–6093, 2020.
+
+\bibitem{bhatt:2017}
+G.~Bhatt, A.~Sharma, S.~Sharma, A.~Nagpal, B.~Raman, and A.~Mittal, ``On the
+  benefit of combining neural, statistical and external features for fake news
+  identification,'' 2017.
 
 \bibitem{thota:2018}
 A.~Thota, P.~Tilak, S.~Ahluwalia, and N.~Lohia, ``Fake news detection: A deep
   learning approach,'' {\em SMU Data Science Review}, vol.~1, no.~3, 2018.
 
-\bibitem{monti:2019}
-F.~Monti, F.~Frasca, D.~Eynard, D.~Mannion, and M.~M. Bronstein, ``Fake news
-  detection on social media using geometric deep learning,'' 2019.
-
-\bibitem{girgis:2018}
-S.~{Girgis}, E.~{Amer}, and M.~{Gadallah}, ``Deep learning algorithms for
-  detecting fake news in online text,'' in {\em 2018 13th International
-  Conference on Computer Engineering and Systems (ICCES)}, pp.~93--97, 2018.
-
-\bibitem{popat:2018}
-K.~Popat, S.~Mukherjee, A.~Yates, and G.~Weikum, ``Declare: Debunking fake news
-  and false claims using evidence-aware deep learning,'' 2018.
-
 \bibitem{saikh:2020}
 T.~Saikh, A.~De, A.~Ekbal, and P.~Bhattacharyya, ``A deep learning approach for
   automatic detection of fake news,'' 2020.
 
-\bibitem{singhania:2017}
-S.~Singhania, N.~Fernandez, and S.~Rao, ``3han: A deep neural network for fake
-  news detection,'' in {\em Neural Information Processing} (D.~Liu, S.~Xie,
-  Y.~Li, D.~Zhao, and E.-S.~M. El-Alfy, eds.), (Cham), pp.~572--581, Springer
-  International Publishing, 2017.
+\bibitem{rodriguez:2019}
+Álvaro Ibrain~Rodríguez and L.~L. Iglesias, ``Fake news detection using deep
+  learning,'' 2019.
+
+\bibitem{kumar:2020}
+S.~Kumar, R.~Asthana, S.~Upadhyay, N.~Upreti, and M.~Akbar, ``Fake news
+  detection using deep learning models: A novel approach,'' {\em Transactions
+  on Emerging Telecommunications Technologies}, vol.~31, no.~2, p.~e3767, 2020.
+\newblock e3767 ETT-19-0216.R1.
+
+\bibitem{popat:2018}
+K.~Popat, S.~Mukherjee, A.~Yates, and G.~Weikum, ``Declare: Debunking fake news
+  and false claims using evidence-aware deep learning,'' 2018.
 
 \bibitem{qawasmeh:2019}
 E.~{Qawasmeh}, M.~{Tawalbeh}, and M.~{Abdullah}, ``Automatic identification of
@@ -43,11 +44,20 @@ M.~A. Ayat~Abedalla, Aisha Al-Sadi, ``A closer look at fake news detection: A
   International Conference on Advances in Artificial Intelligence}, pp.~24--28,
   2019.
 
-\bibitem{kumar:2020}
-S.~Kumar, R.~Asthana, S.~Upadhyay, N.~Upreti, and M.~Akbar, ``Fake news
-  detection using deep learning models: A novel approach,'' {\em Transactions
-  on Emerging Telecommunications Technologies}, vol.~31, no.~2, p.~e3767, 2020.
-\newblock e3767 ETT-19-0216.R1.
+\bibitem{monti:2019}
+F.~Monti, F.~Frasca, D.~Eynard, D.~Mannion, and M.~M. Bronstein, ``Fake news
+  detection on social media using geometric deep learning,'' 2019.
+
+\bibitem{girgis:2018}
+S.~{Girgis}, E.~{Amer}, and M.~{Gadallah}, ``Deep learning algorithms for
+  detecting fake news in online text,'' in {\em 2018 13th International
+  Conference on Computer Engineering and Systems (ICCES)}, pp.~93--97, 2018.
+
+\bibitem{singhania:2017}
+S.~Singhania, N.~Fernandez, and S.~Rao, ``3han: A deep neural network for fake
+  news detection,'' in {\em Neural Information Processing} (D.~Liu, S.~Xie,
+  Y.~Li, D.~Zhao, and E.-S.~M. El-Alfy, eds.), (Cham), pp.~572--581, Springer
+  International Publishing, 2017.
 
 \bibitem{zellers:2019}
 R.~Zellers, A.~Holtzman, H.~Rashkin, Y.~Bisk, A.~Farhadi, F.~Roesner, and
@@ -56,16 +66,6 @@ R.~Zellers, A.~Holtzman, H.~Rashkin, Y.~Bisk, A.~Farhadi, F.~Roesner, and
 \bibitem{zhou:2019}
 Z.~Zhou, H.~Guan, M.~M. Bhat, and J.~Hsu, ``Fake news detection via nlp is
   vulnerable to adversarial attacks,'' 2019.
-
-\bibitem{oshikawa:2020}
-R.~Oshikawa, J.~Qian, and W.~Y. Wang, ``A survey on natural language processing
-  for fake news detection,'' in {\em Proceedings of the 12th Conference on
-  Language Resources and Evaluation (LREC 2020)}, p.~6086–6093, 2020.
-
-\bibitem{bhatt:2017}
-G.~Bhatt, A.~Sharma, S.~Sharma, A.~Nagpal, B.~Raman, and A.~Mittal, ``On the
-  benefit of combining neural, statistical and external features for fake news
-  identification,'' 2017.
 
 \bibitem{guo:2019}
 B.~Guo, H.~Wang, Y.~Ding, W.~Wu, S.~Hao, Y.~Sun, and Z.~Yu, ``Conditional text
