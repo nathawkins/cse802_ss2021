@@ -93,13 +93,21 @@
     %% KNN
     \begin{table}[]
     \centering
-    \begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-    \textbf{KNN K-Value} & \textbf{Accuracy} & \textbf{auPRC} & \textbf{F1} &                             \textbf{auROC} & \textbf{Time} \\ \hline
-    \end{tabular}
-    \caption{}
-    \label{table:3}
-    \end{table} 
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Method} & \textbf{Accuracy} & \textbf{auPRC} & \textbf{F1} & \textbf{auROC} & \textbf{Time} \\ \hline
+\textbf{KNN-3}  & 0.77 & 0.71 & 0.74 & 0.77 & 11176.50 \\ \hline
+\textbf{KNN-5}  & 0.74 & 0.69 & 0.69 & 0.74 & 10014.54 \\ \hline
+\textbf{KNN-7}  & 0.72 & 0.67 & 0.64 & 0.71 & 11483.15 \\ \hline
+\textbf{KNN-9}  & 0.70 & 0.65 & 0.60 & 0.69 & 11389.89 \\ \hline
+\textbf{KNN-15} & 0.68 & 0.64 & 0.55 & 0.67 & 10377.58 \\ \hline
+\textbf{KNN-17} & 0.69 & 0.65 & 0.57 & 0.68 & 10979.94 \\ \hline
+\textbf{KNN-19} & 0.70 & 0.66 & 0.58 & 0.69 & 10967.81 \\ \hline
+\textbf{KNN-21} & 0.71 & 0.66 & 0.60 & 0.70 & 11090.60 \\ \hline
+\end{tabular}
+\caption{KNN results averaged over 5-fold CV.}
+\label{table:3}
+\end{table}
     
     %% Parzen Window
     \begin{table}[]

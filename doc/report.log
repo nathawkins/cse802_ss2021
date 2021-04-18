@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.14)  18 APR 2021 11:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.14)  18 APR 2021 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,41 +333,41 @@ LaTeX Warning: No positions in optional float specifier.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 105.
+               Default added (so using `tbp') on input line 113.
 
-[5] [6] (./report.bbl [7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+[5] (./report.bbl [6])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 2D943D96A4E4813D2CD1BD7480F3752C;231.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 6394 strings out of 481239
- 103848 string characters out of 5920377
- 465720 words of memory out of 5000000
+ 6393 strings out of 481239
+ 103842 string characters out of 5920377
+ 466755 words of memory out of 5000000
  21521 multiletter control sequences out of 15000+600000
  537715 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,10n,37p,2374b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,10n,37p,2374b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (8 pages, 205341 bytes).
+Output written on report.pdf (7 pages, 206177 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
+ 140 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
