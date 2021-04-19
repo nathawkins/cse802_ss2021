@@ -63,12 +63,4 @@ S.~Singhania, N.~Fernandez, and S.~Rao, ``3han: A deep neural network for fake
 R.~Zellers, A.~Holtzman, H.~Rashkin, Y.~Bisk, A.~Farhadi, F.~Roesner, and
   Y.~Choi, ``Defending against neural fake news,'' 2019.
 
-\bibitem{zhou:2019}
-Z.~Zhou, H.~Guan, M.~M. Bhat, and J.~Hsu, ``Fake news detection via nlp is
-  vulnerable to adversarial attacks,'' 2019.
-
-\bibitem{guo:2019}
-B.~Guo, H.~Wang, Y.~Ding, W.~Wu, S.~Hao, Y.~Sun, and Z.~Yu, ``Conditional text
-  generation for harmonious human-machine interaction,'' 2019.
-
 \end{thebibliography}
